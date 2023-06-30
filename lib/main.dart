@@ -1,5 +1,6 @@
-import 'package:bank_online/widgets/my_card.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/base_screen.dart';
 
 
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue
       ),
-      // home: MyCard(),
+      home: BaseScreen(),
     );
   }
 }
