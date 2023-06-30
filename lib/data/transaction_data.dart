@@ -19,7 +19,7 @@ class TransactionModel{
     required this.month,
     required this.changePercentageIndicator,
     required this.chnagePercentage,
-    required this.color
+    required this.color, 
 
   });
 
