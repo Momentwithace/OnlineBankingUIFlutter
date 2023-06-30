@@ -33,7 +33,7 @@ class MyCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   
                   children: [
-                    Text(
+                    const Text(
                       "CARD NAME",
                       style: AppTextStyle.MY_CARD_TITLE,
                       ),
@@ -52,7 +52,7 @@ class MyCard extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           "EXP DATE",
                           style: AppTextStyle.MY_CARD_TITLE,
                         ),
@@ -61,11 +61,35 @@ class MyCard extends StatelessWidget {
                           style: AppTextStyle.MY_CARD_SUBTITLE,
                         )
                       ],
+                    ),
+                const SizedBox(width: 20),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "CVV NUMBER",
+                      style: AppTextStyle.MY_CARD_TITLE,
+                    ),
+                    Text(
+                      card.cvv,
+                      style: AppTextStyle.MY_CARD_SUBTITLE,
                     )
+                  ],
+                ),
                   ],
                 )
               ],
-          )
+          ),
+           Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+            Container(
+              width: 50,
+              height: 50,
+              child: Image.asset("assets/icons/masterCard.png"),
+            )
+            ],
+          ),
         ],
       ),
     );
