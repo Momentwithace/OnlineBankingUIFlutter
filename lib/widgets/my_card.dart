@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class MyCard extends StatelessWidget {
   final CardModel card;
   
-  const MyCard({super.key, required this.card});
+  const MyCard({super.key, required this.card,});
 
   @override
   Widget build(BuildContext context) {
